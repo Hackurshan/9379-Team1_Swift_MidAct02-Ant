@@ -43,8 +43,12 @@
 
 
 <!-- Run a specified main class -->
-//here
-
-
+<target name="run-main" depends="compile-all">
+        <java classname="kyu7_8.EvenorOdd" fork="true">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+            </classpath>
+        </java>
+    </target>
 
 </project>
