@@ -1,0 +1,50 @@
+<project name="teamSwiftAnt" default="generate-doc" basedir=".">
+
+<!-- Instantiate Property Variables -->
+<property name="src.dir" value="src/"/>
+<property name="build.dir" value="build"/>
+<property name="lib.dir" value="lib"/>
+<property name="doc.dir" value="doc"/>
+<property name="jar.dir" value="jar"/>
+
+ <!-- Initialize directories -->
+<target name="init">
+<mkdir dir="${build.dir}"/> 
+<mkdir dir="${lib.dir}"/>
+<mkdir dir="${jar.dir}"/>
+<mkdir dir="${doc.dir}"/>
+</target>
+
+<!-- Clean the created directories -->
+//here
+
+<!-- Compile All Java Source Codes -->
+<target name="compile-all" depends="init"> 
+<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+<classpath>
+<pathelement path="${lib.dir}"/>
+</classpath>
+</javac>
+</target>
+
+<!-- Compile A Single Java Source Code -->
+<target name="compile-class" depends="init"> 
+<javac srcdir="${src.dir}" destdir="${build.dir}">
+<include name="kyu7_8/EvenorOdd.java"/> <!-- Fixed path to the Java class -->
+</javac>
+</target>
+
+<!-- Generate documentation -->
+//here
+
+
+<!-- Create JAR files for compiled classes and documentation -->
+//here
+
+
+<!-- Run a specified main class -->
+//here
+
+
+
+</project>
