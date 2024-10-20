@@ -1,3 +1,5 @@
+package kyu5_6;
+
 public class FindOutlier{ 
   static int find(int[] integers){ 
     int numerOfOdds = 0; 

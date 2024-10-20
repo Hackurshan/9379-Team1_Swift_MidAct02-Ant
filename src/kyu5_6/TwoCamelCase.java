@@ -1,6 +1,8 @@
+package kyu5_6;
+
 import java.lang.StringBuilder;
 
-class Solution{
+class ToCamelCase{
 
     static String toCamelCase(String s){
 

@@ -1,7 +1,7 @@
+package kyu3_4;
+
 import java.lang.reflect.Field;
-
 import java.util.Random;
-
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Psychic {

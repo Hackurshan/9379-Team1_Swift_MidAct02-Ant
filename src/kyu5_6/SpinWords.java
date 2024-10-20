@@ -1,3 +1,5 @@
+package kyu5_6;
+
 public class SpinWords {
 
   public String spinWords(String sentence) {

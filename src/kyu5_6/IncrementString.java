@@ -1,4 +1,6 @@
-public class Kata {
+package kyu5_6;
+
+public class IncrementString {
   public static String incrementString(String str) {
         if (str.isEmpty()) {
             return "1";

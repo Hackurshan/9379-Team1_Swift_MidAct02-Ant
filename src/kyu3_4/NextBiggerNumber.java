@@ -1,6 +1,8 @@
+package kyu3_4;
+
 import java.util.Arrays;
 
-public class Kata {
+public class NextBiggerNumber {
     public static long nextBiggerNumber(long n) {
         char[] digits = String.valueOf(n).toCharArray();
         for (int i = digits.length - 2; i >= 0; i--) {

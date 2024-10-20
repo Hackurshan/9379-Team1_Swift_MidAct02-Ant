@@ -1,3 +1,5 @@
+package kyu5_6;
+
 public class Multiplication{
   public static int [][] multiplicationTable(int n){
    int[][] r = new int[n][n];

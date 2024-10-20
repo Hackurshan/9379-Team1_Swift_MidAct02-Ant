@@ -1,4 +1,6 @@
-class Solution {
+package kyu5_6;
+
+class CamelCase {
     public static String camelCase(String input) {
         String[] words = input.split("(?<!^)(?=[A-Z])");
         StringBuilder output = new StringBuilder();

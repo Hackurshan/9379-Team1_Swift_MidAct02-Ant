@@ -35,12 +35,22 @@
 </target>
 
 <!-- Generate documentation -->
-//here
-
+<target name="generate-doc" depends="init">
+    <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"
+    author="true" version="true" use="true"
+    windowtitle="Apache Ant Build System"
+    doctitle="ITCS 311L Midterm Activity 02">
+        <fileset dir="${src.dir}">
+            <include name="**/*.java"/>
+        </fileset>
+    </javadoc>
+</target>
 
 <!-- Create JAR files for compiled classes and documentation -->
-//here
-
+<target name="jar" depends="compile-all">
+    <jar destfile="${jar.dir}/compiled-classes.jar" basedir="${build.dir}"/>
+    <jar destfile="${jar.dir}/documentation.jar" basedir="${doc.dir}"/>
+</target>
 
 <!-- Run a specified main class -->
 <target name="run-main" depends="compile-all">
