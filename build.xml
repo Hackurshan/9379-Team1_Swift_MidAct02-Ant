@@ -16,7 +16,12 @@
 </target>
 
 <!-- Clean the created directories -->
-//here
+ <target name="clean">
+    <delete dir="${build.dir}"/> <!-- Deletes the build directory -->
+    <delete dir="${jar.dir}"/> <!-- Deletes the jar directory -->
+    <delete dir="${doc.dir}"/> <!-- Deletes the doc directory -->
+    <delete dir="${lib.dir}"/> <!-- Deletes the lib directory -->
+</target>
 
 <!-- Compile All Java Source Codes -->
 <target name="compile-all" depends="init"> 
@@ -62,13 +67,6 @@
         </java>
     </target>
 
-    <!-- Clean the created directories -->
-    <target name="clean">
-        <delete dir="${build.dir}"/> <!-- Deletes the build directory -->
-        <delete dir="${jar.dir}"/> <!-- Deletes the jar directory -->
-        <delete dir="${doc.dir}"/> <!-- Deletes the doc directory -->
-        <delete dir="${lib.dir}"/> <!-- Deletes the lib directory -->
-    </target>
 </project>
 
 
