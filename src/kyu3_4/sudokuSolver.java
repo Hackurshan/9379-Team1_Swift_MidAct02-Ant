@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class SudokuSolver {
+public class sudokuSolver {
 
     public static int[][] sudoku(int[][] puzzle) {
         Sudoku solver = new Sudoku(puzzle);

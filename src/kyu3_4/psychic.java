@@ -4,10 +4,10 @@ import java.lang.reflect.Field;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class Psychic {
+public class psychic {
     public static void main(String[] args) {
         for(int i = 0; i < 5; ++i) {
-            double guess = Psychic.guess();
+            double guess = psychic.guess();
             double choice = Math.random();
             System.out.format("%1.20f =? %1.20f => %b%n",guess,choice,guess == choice);
         }
@@ -15,7 +15,7 @@ public class Psychic {
 
     public static double guess() {
         try {
-            return (new Psychic()).predict();
+            return (new psychic()).predict();
         }
         catch(Exception e) {
             System.out.println(e);
@@ -26,7 +26,7 @@ public class Psychic {
     protected Random rand;
     protected AtomicLong seed;
 
-    public Psychic() throws Exception {
+    public psychic() throws Exception {
         rand = getMathRand();
         seed = (AtomicLong)getObjVar(rand,"seed");
     }
